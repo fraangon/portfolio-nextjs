@@ -1,4 +1,18 @@
 ---
 label: Project
 hide_body: false
-fields: []
+fields:
+- name: titulo
+  type: text
+  config:
+    required: false
+  label: Titulo
+- name: subtitulo
+  type: text
+  config:
+    required: false
+  label: Subtitulo
+- name: content
+  type: image_gallery
+  config: {}
+  label: Content
