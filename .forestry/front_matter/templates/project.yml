@@ -16,3 +16,5 @@ fields:
   type: image_gallery
   config: {}
   label: Content
+pages:
+- projects/Proyecto-de-Prueba.md
