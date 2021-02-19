@@ -16,12 +16,12 @@ fields:
   type: image_gallery
   config: {}
   label: Content
-- name: content_project
+- name: softwares_used
   type: list
   config:
     use_select: false
     min: 
     max: 
-  label: Content project
+  label: Softwares used
 pages:
 - projects/Proyecto-de-Prueba.md
