@@ -16,5 +16,12 @@ fields:
   type: image_gallery
   config: {}
   label: Content
+- name: content_project
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Content project
 pages:
 - projects/Proyecto-de-Prueba.md
