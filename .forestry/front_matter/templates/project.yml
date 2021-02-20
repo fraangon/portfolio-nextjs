@@ -24,4 +24,5 @@ fields:
     max: 
   label: Softwares used
 pages:
+- projects/Otro-Proyecto.md
 - projects/Proyecto-de-Prueba.md
