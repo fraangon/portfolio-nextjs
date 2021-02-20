@@ -1,26 +1,21 @@
+import React from 'react'
 import matter from 'gray-matter'
+
 import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
 
-const Index = props => {
-  return (
-    <Layout
-      pathname="/"
-      siteTitle={props.title}
-      siteDescription={props.description}
-    >
-      <section>
-        <BlogList allBlogs={props.allBlogs} />
-      </section>
-    </Layout>
-  )
-}
+const Index = ({ title, description, allBlogs }) => (
+  <Layout pathname="/" siteTitle={title} siteDescription={description}>
+    <section>
+      <BlogList allBlogs={allBlogs} />
+    </section>
+  </Layout>
+)
 
 export default Index
 
-export async function getStaticProps() {
-  const siteConfig = await import(`../data/config.json`)
-  //get posts & context from folder
+export function getStaticProps() {
+  // get posts & context from folder
   const posts = (context => {
     const keys = context.keys()
     const values = keys.map(context)
@@ -42,13 +37,11 @@ export async function getStaticProps() {
       }
     })
     return data
-  })(require.context('../posts', true, /\.md$/))
+  })(require.context('../projects', true, /\.md$/))
 
   return {
     props: {
       allBlogs: posts,
-      title: siteConfig.default.title,
-      description: siteConfig.default.description,
     },
   }
 }
