@@ -2,7 +2,12 @@
 titulo: Proyecto de prueba
 subtitulo: 'Subtitulo de proyecto '
 content:
-- "/uploads/screen-shot-2021-02-13-at-11-24-23-pm.png"
-- "/uploads/screen-shot-2021-02-13-at-11-25-22-pm.png"
+- "/uploads/8c8cbf104046487-5f5a36fda75ab.gif"
+- "/uploads/6a367b104046487-5f5a36fda6847.gif"
+- "/uploads/ed6c7a104046487-5f5a49249a83a.gif"
+content_project: []
+softwares_used:
+- Illustrator
+- Photoshop
 
 ---
